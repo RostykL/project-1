@@ -11,40 +11,91 @@ a {
   color: black;
 }
 
-.black-bg {
-  min-height: 100vh;
+.bg-black {
+  height: 100vh;
   background-color: black;
 }
 
-.three-blocks-wrapper {
+.row {
   display: flex;
-  align-items: stretch;
-  padding: 30px 50px;
+  width: 100%;
   font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
   font-weight: 700;
-  flex-wrap: wrap;
+  font-size: 25px;
 }
-
 .block {
-  flex: 1 0 0px;
   flex-grow: 1;
-  background-color: black;
-  margin: 25px;
-  border-radius: 20px;
+  height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  margin: 20px 40px;
+  padding: 20px;
 }
 
-.block-title {
-  text-transform: uppercase;
-  padding: 20px 15px;
+.block-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.inner-block {
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.title {
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 30px;
-  line-height: 16px;
-  height: 100px;
+}
+
+.inner-title {
+  padding: 10px;
+  display: flex;
+  color: #d84488;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.block-1 {
+  flex-grow: 2;
+  background-image: url("./images/l1.png");
+  /* background-size: cover; */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.block-2 {
+  background-image: url("./images/l2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block-3 {
+  background-image: url("./images/l3.png");
+  background-size: contain;
+  background-position: left bottom -20px;
+  background-repeat: no-repeat;
+}
+
+.block-4 {
+  background-image: url("./images/l4.png");
+  background-size: contain;
+  background-position: left bottom;
+
+  background-repeat: no-repeat;
 }
 
 .service {
@@ -59,154 +110,70 @@ a {
   background-color: #2f80ed;
 }
 
-.block-info {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.block-21 {
+  background-image: url("./images/l23.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.inner-block {
-  flex: 1 1 0px;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  margin: 0 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.block-22 {
+  background-image: url("./images/l21.png");
+  background-size: cover;
+  background-position: center 20px;
+  background-repeat: no-repeat;
 }
 
-.reparatie .inner-block {
-  background-color: white;
+.block-23 {
+  background-image: url("./images/l22.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.inner-block img {
-  width: 100%;
-  padding: 0 40px;
-  /* margin: 0 20px; */
+.block-31 {
+  background-image: url("./images/l31.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.inner-block-title {
-  text-transform: uppercase;
-  padding: 15px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #d84488;
-  font-size: 25px;
-  line-height: 16px;
-  width: 100%;
+.block-32 {
+  background-image: url("./images/l32.png");
+  background-size: contain;
+  background-position: center bottom -35px;
+  background-repeat: no-repeat;
 }
 
-.abonnement img,
-.oude-device-verkopen img {
-  padding: 0;
+.block-33 {
+  background-color: #F2F2F2;
+  background-image: url("./images/l34.png");
+  background-size: contain;
+  background-position: center bottom -20px;
+  background-repeat: no-repeat;
 }
 
-.bestselling-ophalen img {
-  padding: 0 15px;
-}
-
-.oude-device-verkopen img,
-.bestselling-ophalen img {
-  width: 60%;
-}
-
-.support .inner-block-title,
-.abonnement .inner-block-title {
-  padding: 50px 50px;
-  padding-bottom: 30px;
-}
-
-.bestselling-ophalen .inner-block-title,
-.oude-device-verkopen .inner-block-title {
-  margin-top: 30px;
-  padding: 0px;
-}
-
-.aanmelden img {
-  width: 331px;
-  align-self: flex-end;
-  padding-right: 0;
-}
-
-.ophalen img,
-.retour img {
-  padding: 0;
-}
-
-.retour img {
-  width: 331px;
-  align-self: flex-end;
-}
-
-.reparatie .inner-block-title {
-  padding: 50px 50px;
-  padding-bottom: 30px;
-}
-
-.verkoop .inner-block-title {
-  margin: 30px 0px;
-}
-
-.smartphone {
-  background-color: #fafafa;
-}
-
-.smartphone img {
-  width: 100%;
-  padding: 0;
-}
-
-.tablet img {
-  padding-left: 0;
-}
-
-.laptop {
-  background-color: #f2f2f2;
-}
-.laptop .inner-block-title {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.accessoires {
-  background-color: #fafafa;
-}
-
-.tablet {
-  background-color: white;
+.block-34 {
+  background-image: url("./images/l33.png");
+  background-size: contain;
+  background-position: center bottom -30px;
+  background-repeat: no-repeat;
 }
 
 
-@media screen and (max-width: 1400px) {
-    .inner-block img {
-        padding: 0px !important;
-        width: 100%;
-    }
+@media screen and (max-width: 1148px) {
+  .inner-title {
+    font-size: 16px !important;
+  }
+
+  .block-1 {
+    background-position: center;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .three-blocks-wrapper {display: block;}
-}
+@media screen and (max-width: 1048px) {
+  .inner-title {
+    font-size: 13px !important;
+  }
 
-@media screen and (max-width: 700px) {
-    .three-blocks-wrapper {
-        padding: 30px 0;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .inner-block-title {
-        margin-top: 15px !important;
-        font-size: 20px !important;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .inner-block-title {
-        margin-top: 10px !important;
-        padding: 5px !important;
-        font-size: 15px !important;
-    }
+  .block-21 {
+    background-position: center bottom -40px;
+  }
 }
